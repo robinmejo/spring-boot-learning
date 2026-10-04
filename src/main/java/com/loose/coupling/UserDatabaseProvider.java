@@ -1,6 +1,7 @@
-package com.tight.coupling;
+package com.loose.coupling;
 
-public class UserDatabase {
+public class UserDatabaseProvider implements UserDataProvider {
+    @Override 
     public String getUserDetails(){
         //Direct acces databse from here
         return "User Details From Database";
